@@ -8,7 +8,9 @@ for loop in range(nbPersonnes):
    totalÉquipe2 = totalÉquipe2 + poids2
 if totalÉquipe1 > totalÉquipe2:
    print("L'équipe 1 a un avantage")
+   print("Poids total pour l'équipe 1 :", totalÉquipe1)
+   print("Poids total pour l'équipe 2 :", totalÉquipe2)
 else:
    print("L'équipe 2 a un avantage")
-print("Poids total pour l'équipe 1 :", totalÉquipe1)
-print("Poids total pour l'équipe 2 :", totalÉquipe2)
+   print("Poids total pour l'équipe 1 :", totalÉquipe1)
+   print("Poids total pour l'équipe 2 :", totalÉquipe2)
