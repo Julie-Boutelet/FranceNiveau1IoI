@@ -1,0 +1,36 @@
+nb_membres = int(input())
+poids_1=[]
+poids_2=[]
+total_poids1=0
+total_poids2=0
+
+p11 = int(input("Poids?"))
+poids_1.append(p11)
+p21 = int(input("Poids?"))
+poids_2.append(p21)
+p12 = int(input("Poids?"))
+poids_1.append(p12)
+p22 = int(input("Poids?"))
+poids_2.append(p22)
+p13 = int(input("Poids?"))
+poids_1.append(p13)
+p23 = int(input("Poids?"))
+poids_2.append(p23)
+
+
+for poids in poids_1:
+   total_poids1 += poids
+
+for poids in poids_2:
+   total_poids2 += poids
+
+if total_poids1>total_poids2:
+   print("L'équipe 1 a un avantage")
+   print("Poids total pour l'équipe 1: ",total_poids1)
+   print("Poids total pour l'équipe 2: ",total_poids2)
+
+
+else:
+   print("L'équipe 2 a un avantage")
+   print("Poids total pour l'équipe 1: ",total_poids1)
+   print("Poids total pour l'équipe 2: ",total_poids2)
