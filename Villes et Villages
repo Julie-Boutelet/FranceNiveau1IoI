@@ -1,0 +1,19 @@
+
+
+Au cours de votre périple, vous traversez de nombreux lieux habités. Pour chacun d'entre eux, vous notez soigneusement sa population. Après quelques semaines de voyage, vous avez vraiment l'impression qu'il y beaucoup de villages et très peu de villes.
+Ce que doit faire votre programme :
+
+On vous donne le nombre d'habitants d'un certain nombre de lieux que vous visitez. Une ville étant un lieu dont la population est strictement supérieure à 10 000 habitants, déterminez combien de lieux sont des villes.
+
+Votre programme doit lire un entier : le nombre de lieux. Il doit ensuite lire, pour chaque lieu, un entier donnant le nombre de gens qui y habitent. Votre programme doit alors afficher le nombre de villes.
+
+nombre_village=int(input())
+count=0
+
+for loop in range(nombre_village):
+    nombre_habitant=int(input())
+
+    if nombre_habitant>10000:
+           count = count+1
+
+print(count)
