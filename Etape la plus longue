@@ -1,0 +1,19 @@
+
+
+Dans votre petit carnet de voyage, vous avez noté la distance que vous avez parcourue chaque jour. Aujourd'hui, vous êtes particulièrement en forme et vous décidez donc de marcher plus que les jours précédents. Vous souhaitez utiliser un programme pour déterminer quel est votre record pour l'instant.
+Ce que doit faire votre programme :
+
+Votre programme doit d'abord lire un entier strictement positif, le nombre de jours de marche effectués jusqu'à présent. Il doit ensuite lire, pour chaque jour, la distance parcourue ce jour-là. Il doit alors afficher la distance maximale parcourue en une journée.
+ Algorithme
+
+Le problème consiste à calculer le maximum d'un ensemble de distances. Pour cela, on énumère les nombres un par un, en maintenant une variable, nommée distanceMax, qui correspond à tout moment à la distance la plus grande qu'on a déjà rencontrée.
+
+Au début, distanceMax vaut 0. Lorsqu'on traite une nouvelle distance, on teste si cette distance dépasse la valeur courante de la variable distanceMax. Si c'est le cas, on enregistre cette distance dans la variable. Une fois que l'on a traité toutes les distances, on affiche la valeur de distanceMax. 
+
+nombre_jours = int(input())
+dist0=0
+for loop in range(nombre_jours):
+    distance=int(input())
+    if distance>dist0:
+        dist0=distance
+print(dist0)
